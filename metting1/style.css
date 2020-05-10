@@ -1,0 +1,52 @@
+.logo{
+    display: block;
+}
+.address-link{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-right: 40px; 
+}
+.address-link:not(:last-child){
+    margin-right: 40px;
+}
+
+.address-link + .address-link{
+    margin-left: 40px;
+}
+ 
+phone-link-img{
+    width: 10px;
+    height:18px; ;
+}
+.address-link:hover,
+.address-link:focus {
+    color: blue;
+    text-decoration: underline blue;
+}
+.phone-link-img{
+    width: 10px;
+    height: 10px;
+}
+.working-time::before{
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(Frame.svg) center center;
+}
+.address-link:hover .working-time:hover::before{
+    color: red;
+}
+.nav-list{
+    list-style-type: none
+    ;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-list li{
+    display: inline-block;
+}
+.nav-list :last-child{
+ margin:40px;
+}
